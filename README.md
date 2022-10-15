@@ -17,4 +17,4 @@ _redux-logger_
 
 _redux devtools_
 
-`reduc devtools` logs state timing, relationships & built-in testing
+`redux devtools` logs timing of state, relationships, & built-in testing
