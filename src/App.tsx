@@ -1,26 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {useSelector, useDispatch} from 'react-redux'
+import {Toggle} from './redux/types'
+import {setSwitch} from './redux/actions'
 
 function App() {
+  const state = useSelector((state: Toggle) => state.on)
+  const dispatch = useDispatch()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div onClick={() => dispatch(setSwitch(state))}>{state.toString().toUpperCase()}</div>
   );
 }
-
 export default App;
