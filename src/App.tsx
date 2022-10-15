@@ -1,9 +1,10 @@
-import {useSelector, useDispatch} from 'react-redux'
+import {useDispatch} from 'react-redux'
+import {useStore} from './hooks/useStore'
 import {Toggle} from './redux/types'
 import {setSwitch} from './redux/actions'
 
 function App() {
-  const state = useSelector((state: Toggle) => state.on)
+  const state = useStore((state: Toggle) => state.on)
   const dispatch = useDispatch()
 
   return (

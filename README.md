@@ -8,7 +8,7 @@
 
 download `redux devtools` from [Google Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 
-then, find installation in your menu when you **right click** on a page
+then, find `redux devtools` in your menu when you **right click** on a page
 ***
 
 _redux-logger_
@@ -17,4 +17,8 @@ _redux-logger_
 
 _redux devtools_
 
-`reduc devtools` logs state timing, relationships & built-in testing
+`composeWithDevTools` logs timing of state, relationships, & built-in testing (redux/createStore.ts)
+
+_useSyncExternalStore_
+
+`useSyncExternalStore` synchronizes external store with state of react app (hooks/useStore.ts)
