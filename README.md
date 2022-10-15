@@ -8,7 +8,7 @@
 
 download `redux devtools` from [Google Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 
-then, find installation in your menu when you **right click** on a page
+then, find `redux devtools` in your menu when you **right click** on a page
 ***
 
 _redux-logger_
