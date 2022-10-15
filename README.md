@@ -17,4 +17,4 @@ _redux-logger_
 
 _redux devtools_
 
-`redux devtools` logs timing of state, relationships, & built-in testing
+`composewithDevTools` logs timing of state, relationships, & built-in testing (redux/createStore.ts)
