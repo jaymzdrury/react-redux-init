@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+## Redux Set Up
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Redux" width="350" />
 
-Currently, two official plugins are available:
+### Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`npm i` for node_modules
 
-## Expanding the ESLint configuration
+download `redux devtools` from [Google Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+then, find `redux devtools` in your menu when you **right click** on a page
+***
 
-- Configure the top-level `parserOptions` property like this:
+_redux-logger_
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+`redux-logger` logs redux state and actions in console (redux/createStore.ts)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+_redux devtools_
+
+_useSyncExternalStore_
+
+`useSyncExternalStore` synchronizes external store with state of react app (hooks/useStore.ts)
