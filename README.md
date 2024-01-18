@@ -17,8 +17,6 @@ _redux-logger_
 
 _redux devtools_
 
-`composeWithDevTools` logs timing of state, relationships, & built-in testing (redux/createStore.ts)
-
 _useSyncExternalStore_
 
 `useSyncExternalStore` synchronizes external store with state of react app (hooks/useStore.ts)
