@@ -1,24 +1,30 @@
-## Redux Set Up
+# React + TypeScript + Vite
 
-<img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Redux" width="350" />
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Setup
+Currently, two official plugins are available:
 
-`npm i` for node_modules
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-download `redux devtools` from [Google Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+## Expanding the ESLint configuration
 
-then, find `redux devtools` in your menu when you **right click** on a page
-***
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-_redux-logger_
+- Configure the top-level `parserOptions` property like this:
 
-`redux-logger` logs redux state and actions in console (redux/createStore.ts)
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
 
-_redux devtools_
-
-`composeWithDevTools` logs timing of state, relationships, & built-in testing (redux/createStore.ts)
-
-_useSyncExternalStore_
-
-`useSyncExternalStore` synchronizes external store with state of react app (hooks/useStore.ts)
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
